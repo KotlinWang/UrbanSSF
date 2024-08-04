@@ -29,13 +29,19 @@ https://github.com/user-attachments/assets/df3c2974-1717-4e07-b301-4f6274e5ecd8.
 ## :see_no_evil:Visualization
 
 ##### UAVid
+<div align="center">
 <img src="./assets/uavid.jpg" height="80%" width="80%" />
+</div>
 
 ##### Vaihingen
+<div align="center">
 <img src="./assets/vaihingen.jpg" height="80%" width="80%" />
+</div>
 
 ##### Potsdam
+<div align="center">
 <img src="./assets/potsdam.jpg" height="80%" width="80%" />
+</div>
 
 ## :computer:Installation
 
