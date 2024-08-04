@@ -14,17 +14,17 @@ https://github.com/user-attachments/assets/df3c2974-1717-4e07-b301-4f6274e5ecd8.
 
 ##  :dart:Model Zoo
 
-| **Dateset**         | **Method**     | **UAVid mIoU↑** | **Vaihingen mIoU↑** | **Potsdam mIoU↑** | Download |
-| ------------------------- | -------------- | --------------- | ------------------- | ----------------- | ----------------- |
-| **Vaihingen**       | UrbanSSF-T | 61.5            | 75.8                | 81.7              | [model](https://drive.google.com/file/d/1cpvsf6bIml_NZ8ouFIx9SpBL0CL5zFI1/view?usp=drive_link) |
-|                           | UrbanSSF-S | 60.6            | 69.4                | 80.3              | [model]()     |
-|                           | UrbanSSF-L | 61.1            | 79.6                | 83.8              | [model]()     |
-| **Potsdam**     | UrbanSSF-T | 61.5            | 75.8                | 81.7              | [model](https://drive.google.com/file/d/1S4sSC_Xp3YjWSwEOfmm6yvp6VnIM_XXD/view?usp=drive_link) |
-|               | UrbanSSF-S | 60.6            | 69.4                | 80.3              | [model]()                                                    |
-|               | UrbanSSF-L | 63.2            | 74.3                | -                 | [model]()        |
-| **UAVid**            | UrbanSSF-T | 61.5            | 75.8                | 81.7              | [model](https://drive.google.com/file/d/1Rl88F1Ooetvk1r527jDmhdNLYgTe8BuB/view?usp=drive_link) |
-|               | UrbanSSF-S | 60.6            | 69.4                | 80.3              | [model]()                                                    |
-|               | UrbanSSF-L | 55.7            | 79.6                | 80.9              | [model]()     |
+| **Dateset**         | **Method**     | **Params(M)↓** | **FPS↑** | **mIoU↑** | Download |
+| :------------------------ | :------------: | :-------------: | :-----------------: | :---------------: | :---------------: |
+| **Vaihingen**       | UrbanSSF-T | **3.6** | **66.3**        | 83.3          | [model](https://drive.google.com/file/d/1cpvsf6bIml_NZ8ouFIx9SpBL0CL5zFI1/view?usp=drive_link) |
+|                           | UrbanSSF-S | 14.0   | 25.6        | 84.5          | [model](https://drive.google.com/file/d/1iLU7PioDTnvzuBdcbueLyepp0uyCWRQl/view?usp=drive_link) |
+|                           | UrbanSSF-L | 60.0     | 10.2           | **85.0**     | [model](https://drive.google.com/file/d/13G7285_lCU_lhi51T-zehfL_oragNsy-/view?usp=drive_link) |
+| **Potsdam**     | UrbanSSF-T |    **3.6**     | **66.3** | 85.4          | [model](https://drive.google.com/file/d/1S4sSC_Xp3YjWSwEOfmm6yvp6VnIM_XXD/view?usp=drive_link) |
+|               | UrbanSSF-S |      14.0      |   25.6   | 86.9          | [model](https://drive.google.com/file/d/1cMcxlzT3ajtLJvN5PWbDCpUBF__GOMRa/view?usp=drive_link) |
+|               | UrbanSSF-L |      60.0      |   10.2   | **87.6**        | [model](https://drive.google.com/file/d/1f5oHB72AWyWyCXV3Cjd6UFGEHnxc8Vft/view?usp=drive_link) |
+| **UAVid**            | UrbanSSF-T |    **3.6**     | **66.3** | 65.7         | [model](https://drive.google.com/file/d/1Rl88F1Ooetvk1r527jDmhdNLYgTe8BuB/view?usp=drive_link) |
+|               | UrbanSSF-S |      14.0      |   25.6   | 69.8          | [model](https://drive.google.com/file/d/1AlE_0PcB4PDwrevA86PZOAyeloH8tHvE/view?usp=drive_link) |
+|               | UrbanSSF-L |      60.0      |   10.2   | **71.0**      | [model](https://drive.google.com/file/d/1TCrxbzjV907jBYI1AsDQBuZsE5FR6DgU/view?usp=drive_link) |
 
 ## :see_no_evil:Visualization
 
