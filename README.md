@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Accurate Segmentation of Urban Spatial Structure: A Framework for Large-Scale Remote Sensing Images Using Feature State Sequences
 
 https://github.com/user-attachments/assets/df3c2974-1717-4e07-b301-4f6274e5ecd8.mp4
@@ -42,3 +43,7 @@ https://github.com/user-attachments/assets/df3c2974-1717-4e07-b301-4f6274e5ecd8.
 |                           | UrbanSSF-L     | ResNeXt-101  | **71.0**        | **93.6**          | **91.7**           | **85.0**            | **92.2**  | **93.3**   | **87.6**    |
 | **Improvement**           |                |              | **+4.9**        | **+1.0**          | **+1.3**           | **+2.3**            | **+0.9**        | **+0.8**         | **+1.3**          |
 
+=======
+# UrbanSSF
+https://github.com/user-attachments/assets/df3c2974-1717-4e07-b301-4f6274e5ecd8.mp4
+>>>>>>> b774026df626e8fd08429d27ec39d1541d87532c
