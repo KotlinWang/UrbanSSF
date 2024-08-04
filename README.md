@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Accurate Segmentation of Urban Spatial Structure: A Framework for Large-Scale Remote Sensing Images Using Feature State Sequences
 
 https://github.com/user-attachments/assets/df3c2974-1717-4e07-b301-4f6274e5ecd8.mp4
@@ -32,3 +31,49 @@ https://github.com/user-attachments/assets/df3c2974-1717-4e07-b301-4f6274e5ecd8.
 |                           | UrbanSSF-S     | 69.8            | 93.3              | 91.4               | 84.5               | 91.7   | 92.9    | 86.9     |
 |                           | UrbanSSF-L     | **71.0**        | **93.6**          | **91.7**           | **85.0**            | **92.2**  | **93.3**   | **87.6**    |
 | **Improvement**           |                | **+4.9**        | **+1.0**          | **+1.3**           | **+2.3**            | **+0.9**        | **+0.8**         | **+1.3**          |
+
+## :see_no_evil:Visualization
+
+##### UAVid
+<img src="./assets/uavid.jpg" height="80%" width="80%" />
+
+##### Vaihingen
+<img src="./assets/vaihingen.jpg" height="80%" width="80%" />
+
+##### Potsdam
+<img src="./assets/potsdam.jpg" height="80%" width="80%" />
+
+## :computer:Installation
+
+<details open>
+
+**Step 0**: Clone this project and create a conda environment:
+
+   ```shell
+   git clone https://github.com/KotlinWang/UrbanSSF.git
+   
+   conda create -n urbanssf python=3.11
+   conda activate urbanssf
+   ```
+
+**Step 1**: Install pytorch and torchvision matching your CUDA version:
+
+   ```shell
+   pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu121
+   ```
+
+**Step 2**: Install requirements:
+
+   ```shell
+   pip install -r requirements.txt
+   ```
+
+**Step 3**: Install Mamba:
+
+   ```shell
+   pip install causal-conv1d==1.2.0.post2
+   
+   pip install mamba-ssm==1.2.0.post1
+   ```
+
+</details>
