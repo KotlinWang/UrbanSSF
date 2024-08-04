@@ -193,8 +193,6 @@ python train_supervision.py -c config/uavid/unetformer.py
 
 "-o" denotes the output path 
 
-"-t" denotes the test time augmentation (TTA), can be [None, 'lr', 'd4'], default is None, 'lr' is flip TTA, 'd4' is multiscale TTA
-
 "--rgb" denotes whether to output masks in RGB format
 
 **Vaihingen**
