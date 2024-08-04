@@ -12,25 +12,19 @@ https://github.com/user-attachments/assets/df3c2974-1717-4e07-b301-4f6274e5ecd8.
 - UrbanSSF is the first to combine CNNs, Transformers and Mamba for the remote sensing of VHR urban scenes. The Global Semantic Enhancer (GSE) module and the spatial interactive attention (SIA) mechanism process different scale features from the encoder. FSI Mamba uses the powerful sequence modeling ability of state Space Module (SSMs) to apply to the feature state sequence. Channel Space Reconstruction (CSR) algorithm is designed to reduce the computational complexity of large-scale feature fusion.
 - UrbanSSF has achieved the effect of SOTA on three urban scene datasets of UAVid, ISPRS Vaihingen and Potsdam. Especially on the UAVid dataset.
 
-## :bookmark_tabs: Main Result
+##  :dart:Model Zoo
 
-| **Type**                  | **Method**     | **UAVid mIoU↑** | **Vaihingen OA↑** | **Vaihingen mF1↑** | **Vaihingen mIoU↑** | **Potsdam OA↑** | **Potsdam mF1↑** | **Potsdam mIoU↑** |
-| ------------------------- | -------------- | --------------- | ----------------- | ------------------ | ------------------- | --------------- | ---------------- | ----------------- |
-| **CNNs**                  | BiSeNet        | 61.5            | 87.1              | 84.3               | 75.8                | 88.2            | 89.8             | 81.7              |
-|                           | DANet          | 60.6            | 88.2              | 79.6               | 69.4                | 89.1            | 88.9             | 80.3              |
-|                           | SwiftNet       | 61.1            | 90.2              | 88.3               | 79.6                | 89.3            | 91.0             | 83.8              |
-|                           | ABCNet         | 63.8            | 90.7              | 89.5               | 81.3                | 90.7            | 91.9             | 85.2              |
-| **Transformer**           | Segmenter   | 58.7            | 88.1              | 84.1               | 73.6                | 88.7-           | 89.2         | 80.7          |
-|                           | BANet       | 64.6            | 90.5              | 89.6               | 81.4                | 91.0            | 92.5             | 86.3              |
-|                 | BoTNet      | 63.2            | 88.0              | 84.8               | 74.3                | -               | -                | -                 |
-|                 | UNetFormer  | 66.1            | 91.0              | 90.4               | 82.7                | 90.8            | 92.0             | 85.3              |
-| **Mamba**                 | Mamba-UNet     | 57.3            | 92.6          | 89.7               | 81.6                | 88.9            | 90.1             | 82.3              |
-|                           | Swin-UMamba    | 53.4            | 92.4              | 89.4               | 81.3                | 89.1            | 90.4             | 82.7              |
-|                           | VM-UNet        | 55.7            | 92.3              | 88.3               | 79.6                | 88.2            | 89.3             | 80.9              |
-| **Our** | UrbanSSF-T     | 65.7            | 93.1              | 90.7               | 83.3                | 90.9            | 92.0             | 85.4              |
-|                           | UrbanSSF-S     | 69.8            | 93.3              | 91.4               | 84.5               | 91.7   | 92.9    | 86.9     |
-|                           | UrbanSSF-L     | **71.0**        | **93.6**          | **91.7**           | **85.0**            | **92.2**  | **93.3**   | **87.6**    |
-| **Improvement**           |                | **+4.9**        | **+1.0**          | **+1.3**           | **+2.3**            | **+0.9**        | **+0.8**         | **+1.3**          |
+| **Dateset**         | **Method**     | **UAVid mIoU↑** | **Vaihingen mIoU↑** | **Potsdam mIoU↑** | Download |
+| ------------------------- | -------------- | --------------- | ------------------- | ----------------- | ----------------- |
+| **Vaihingen**       | UrbanSSF-T | 61.5            | 75.8                | 81.7              | [model](https://drive.google.com/file/d/1cpvsf6bIml_NZ8ouFIx9SpBL0CL5zFI1/view?usp=drive_link) |
+|                           | UrbanSSF-S | 60.6            | 69.4                | 80.3              | [model]()     |
+|                           | UrbanSSF-L | 61.1            | 79.6                | 83.8              | [model]()     |
+| **Potsdam**     | UrbanSSF-T | 61.5            | 75.8                | 81.7              | [model](https://drive.google.com/file/d/1S4sSC_Xp3YjWSwEOfmm6yvp6VnIM_XXD/view?usp=drive_link) |
+|               | UrbanSSF-S | 60.6            | 69.4                | 80.3              | [model]()                                                    |
+|               | UrbanSSF-L | 63.2            | 74.3                | -                 | [model]()        |
+| **UAVid**            | UrbanSSF-T | 61.5            | 75.8                | 81.7              | [model](https://drive.google.com/file/d/1Rl88F1Ooetvk1r527jDmhdNLYgTe8BuB/view?usp=drive_link) |
+|               | UrbanSSF-S | 60.6            | 69.4                | 80.3              | [model]()                                                    |
+|               | UrbanSSF-L | 55.7            | 79.6                | 80.9              | [model]()     |
 
 ## :see_no_evil:Visualization
 
@@ -51,6 +45,7 @@ https://github.com/user-attachments/assets/df3c2974-1717-4e07-b301-4f6274e5ecd8.
 
    ```shell
    git clone https://github.com/KotlinWang/UrbanSSF.git
+   cd UrbanSSF
    
    conda create -n urbanssf python=3.11
    conda activate urbanssf
@@ -77,3 +72,155 @@ https://github.com/user-attachments/assets/df3c2974-1717-4e07-b301-4f6274e5ecd8.
    ```
 
 </details>
+
+## **:house_with_garden:**Dataset Preparation
+
+<details open>
+
+Download the [ISPRS Vaihingen, Potsdam](https://www.isprs.org/education/benchmarks/UrbanSemLab/default.aspxdatasets) and [UAVid](https://uavid.nl/) dateset.
+
+**Vaihingen**
+
+Generate the training set.
+```shell
+python tools/vaihingen_patch_split.py \
+--img-dir "data/vaihingen/train_images" \
+--mask-dir "data/vaihingen/train_masks" \
+--output-img-dir "data/vaihingen/train/images_1024" \
+--output-mask-dir "data/vaihingen/train/masks_1024" \
+--mode "train" --split-size 1024 --stride 512 
+```
+Generate the testing set.
+```shell
+python tools/vaihingen_patch_split.py \
+--img-dir "data/vaihingen/test_images" \
+--mask-dir "data/vaihingen/test_masks_eroded" \
+--output-img-dir "data/vaihingen/test/images_1024" \
+--output-mask-dir "data/vaihingen/test/masks_1024" \
+--mode "val" --split-size 1024 --stride 1024 \
+--eroded
+```
+Generate the masks_1024_rgb (RGB format ground truth labels) for visualization.
+
+````shell
+python tools/vaihingen_patch_split.py \
+--img-dir "data/vaihingen/test_images" \
+--mask-dir "data/vaihingen/test_masks" \
+--output-img-dir "data/vaihingen/test/images_1024" \
+--output-mask-dir "data/vaihingen/test/masks_1024_rgb" \
+--mode "val" --split-size 1024 --stride 1024 \
+--gt
+````
+
+**Potsdam**
+````shell
+python tools/potsdam_patch_split.py \
+--img-dir "data/potsdam/train_images" \
+--mask-dir "data/potsdam/train_masks" \
+--output-img-dir "data/potsdam/train/images_1024" \
+--output-mask-dir "data/potsdam/train/masks_1024" \
+--mode "train" --split-size 1024 --stride 1024 --rgb-image 
+`````
+As for the validation set, you can select some images from the training set to build it.
+
+````shell
+python tools/potsdam_patch_split.py \
+--img-dir "data/potsdam/test_images" \
+--mask-dir "data/potsdam/test_masks_eroded" \
+--output-img-dir "data/potsdam/test/images_1024" \
+--output-mask-dir "data/potsdam/test/masks_1024" \
+--mode "val" --split-size 1024 --stride 1024 \
+--eroded --rgb-image
+````
+
+```shell
+python tools/potsdam_patch_split.py \
+--img-dir "data/potsdam/test_images" \
+--mask-dir "data/potsdam/test_masks" \
+--output-img-dir "data/potsdam/test/images_1024" \
+--output-mask-dir "data/potsdam/test/masks_1024_rgb" \
+--mode "val" --split-size 1024 --stride 1024 \
+--gt --rgb-image
+```
+
+**UAVid**
+```shell
+python tools/uavid_patch_split.py \
+--input-dir "data/uavid/uavid_train_val" \
+--output-img-dir "data/uavid/train_val/images" \
+--output-mask-dir "data/uavid/train_val/masks" \
+--mode 'train' --split-size-h 1024 --split-size-w 1024 \
+--stride-h 1024 --stride-w 1024
+```
+
+```shell
+python tools/uavid_patch_split.py \
+--input-dir "data/uavid/uavid_train" \
+--output-img-dir "data/uavid/train/images" \
+--output-mask-dir "data/uavid/train/masks" \
+--mode 'train' --split-size-h 1024 --split-size-w 1024 \
+--stride-h 1024 --stride-w 1024
+```
+
+```shell
+python tools/uavid_patch_split.py \
+--input-dir "data/uavid/uavid_val" \
+--output-img-dir "data/uavid/val/images" \
+--output-mask-dir "data/uavid/val/masks" \
+--mode 'val' --split-size-h 1024 --split-size-w 1024 \
+--stride-h 1024 --stride-w 1024
+```
+
+</details>
+
+## :running: Training
+
+"-c" means the path of the config, use different **config** to train different models.
+
+```shell
+python train_supervision.py -c config/uavid/unetformer.py
+```
+
+## :mag: Testing
+
+"-c" denotes the path of the config, Use different **config** to test different models. 
+
+"-o" denotes the output path 
+
+"-t" denotes the test time augmentation (TTA), can be [None, 'lr', 'd4'], default is None, 'lr' is flip TTA, 'd4' is multiscale TTA
+
+"--rgb" denotes whether to output masks in RGB format
+
+**Vaihingen**
+```
+python vaihingen_test.py -c config/vaihingen/urbanssf-s.py -o fig_results/vaihingen/urbanssf-s --rgb -t 'None'
+```
+
+**Potsdam**
+
+```
+python potsdam_test.py -c config/potsdam/urbanssf-s.py -o fig_results/potsdam/urbanssf-s --rgb -t 'None'
+```
+
+**UAVid**
+
+```
+python uavid_test.py -c config/uavid/urbanssf-s.py -o fig_results/uavid/urbanssf-s --rgb -t 'None'
+```
+
+## Acknowledgement
+
+- [pytorch lightning](https://www.pytorchlightning.ai/)
+- [timm](https://github.com/rwightman/pytorch-image-models)
+- [pytorch-toolbelt](https://github.com/BloodAxe/pytorch-toolbelt)
+- [mmsegmentation](https://github.com/open-mmlab/mmsegmentation)
+- [UNetFormer](https://github.com/WangLibo1995/GeoSeg)
+- [Vision Mamba](https://github.com/hustvl/Vim)
+
+## Citation
+
+If you find this project useful in your research, please consider citing：
+
+```
+```
+
