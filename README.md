@@ -9,7 +9,7 @@ https://github.com/user-attachments/assets/df3c2974-1717-4e07-b301-4f6274e5ecd8.
 ## :star:Overview
 
 ![overview](./assets/urbanssf.jpg)
-- UrbanSSF is the first to combine CNNs, Transformers and Mamba for the remote sensing of VHR urban scenes. The Global Semantic Enhancer (GSE) module and the Spatial Interactive Attention (SIA) mechanism process different scale features from the encoder. FSI Mamba uses the powerful sequence modeling ability of state space module to apply to the feature state sequence. The Channel Space Reconstruction (CSR) algorithm is designed to reduce the computational complexity of large-scale feature fusion.
+- UrbanSSF is the first to combine CNNs, Transformers and Mamba for the remote sensing of VHR urban scenes. The Global Semantic Enhancer (GSE) module and the Spatial Interactive Attention (SIA) mechanism process different scale features from the encoder. Feature State Interaction (FSI) Mamba uses the powerful sequence modeling ability of state space module to apply to the feature state sequence. The Channel Space Reconstruction (CSR) algorithm is designed to reduce the computational complexity of large-scale feature fusion.
 - UrbanSSF has achieved the effect of SOTA on three urban scene datasets of UAVid, ISPRS Vaihingen and Potsdam. Especially on the UAVid dataset.
 
 ##  :dart:Model Zoo
