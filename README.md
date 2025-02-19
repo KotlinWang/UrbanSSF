@@ -4,7 +4,8 @@ https://github.com/user-attachments/assets/df3c2974-1717-4e07-b301-4f6274e5ecd8.
 
 ## :newspaper:News
 
-- **[2024/8/4]** UrbanSSF Project Creation :sunglasses:. 
+- **[2025/1/17]** Our article ([*Accurate Segmentation of Urban Spatial Structure: A Framework for Large-Scale Remote Sensing Images Using Feature State Sequences*](https://www.sciencedirect.com/science/article/abs/pii/S0924271625000176)) was successfully accepted by ISPRS Journal of Photogrammetry and Remote Sensing!!!  :tada: :tada: :tada: 
+- **[2024/8/4]** UrbanSSF Project Creation. :sunglasses:
 
 ## :star:Overview
 
@@ -28,6 +29,8 @@ https://github.com/user-attachments/assets/df3c2974-1717-4e07-b301-4f6274e5ecd8.
 
 ## :see_no_evil:Visualization
 
+<details open>
+
 ##### UAVid
 <div align="center">
 <img src="./assets/uavid.jpg" height="80%" width="80%" />
@@ -42,11 +45,11 @@ https://github.com/user-attachments/assets/df3c2974-1717-4e07-b301-4f6274e5ecd8.
 <div align="center">
 <img src="./assets/potsdam.jpg" height="80%" width="80%" />
 </div>
+</details>
 
 ## :computer:Installation
 
 <details open>
-
 **Step 0**: Clone this project and create a conda environment:
 
    ```shell
@@ -69,13 +72,17 @@ https://github.com/user-attachments/assets/df3c2974-1717-4e07-b301-4f6274e5ecd8.
    pip install -r requirements.txt
    ```
 
+Change "collections.MutableMapping" in *xxx/envs/urbanssf/lib/python3.11/site-packages/catalyst/tools/registry.py* to "collections.abc.MutableMapping".
+
 **Step 3**: Install Mamba:
 
    ```shell
-   pip install causal-conv1d==1.2.0.post2
-   
    pip install mamba-ssm==1.2.0.post1
+   
+   pip install causal-conv1d==1.2.0.post2
    ```
+
+Replace the content of *xxx/envs/urbanssf/lib/python3.11/site-packages/mamba_ssm/ops/selective_scan_interface.py* with [selective_scan_interface.py](https://drive.google.com/file/d/1hHNJjNkV_-Uurqg07qCXaCPNhu-FESzB/view?usp=drive_link).
 
 </details>
 
@@ -187,6 +194,11 @@ python tools/uavid_patch_split.py \
 python train_supervision.py -c config/uavid/unetformer.py
 ```
 
+If the pre-trained weights download fails, please use: 
+```shell
+HF_ENDPOINT=https://hf-mirror.com python train_supervision.py -c config/uavid/unetformer.py
+```
+
 ## :mag: Testing
 
 "-c" denotes the path of the config, Use different **config** to test different models. 
@@ -226,5 +238,14 @@ python uavid_test.py -c config/uavid/urbanssf-s.py -o fig_results/uavid/urbanssf
 If you find this project useful in your research, please consider citing：
 
 ```
+@article{WANG2025824,
+title = {Accurate semantic segmentation of very high-resolution remote sensing images considering feature state sequences: From benchmark datasets to urban applications},
+journal = {ISPRS Journal of Photogrammetry and Remote Sensing},
+volume = {220},
+pages = {824-840},
+year = {2025},
+issn = {0924-2716}
+author = {Zijie Wang and Jizheng Yi and Aibin Chen and Lijiang Chen and Hui Lin and Kai Xu}
+}
 ```
 
