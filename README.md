@@ -1,8 +1,6 @@
 # Accurate Segmentation of Urban Spatial Structure: A Framework for Large-Scale Remote Sensing Images Using Feature State Sequences
 
-https://github.com/user-attachments/assets/7642ec47-1c8a-472e-a5f9-5d1501794f7a.mp4
-
-
+https://github.com/user-attachments/assets/df3c2974-1717-4e07-b301-4f6274e5ecd8.mp4
 
 ## :newspaper:News
 
