@@ -50,6 +50,7 @@ https://github.com/user-attachments/assets/7642ec47-1c8a-472e-a5f9-5d1501794f7a.
 ## :computer:Installation
 
 <details open>
+
 **Step 0**: Clone this project and create a conda environment:
 
    ```shell
