@@ -83,7 +83,7 @@ Change "collections.MutableMapping" in *xxx/envs/urbanssf/lib/python3.11/site-pa
    pip install causal-conv1d==1.2.0.post2
    ```
 
-Replace the content of *xxx/envs/urbanssf/lib/python3.11/site-packages/mamba_ssm/ops/selective_scan_interface.py* with [selective_scan_interface.py](https://drive.google.com/file/d/1hHNJjNkV_-Uurqg07qCXaCPNhu-FESzB/view?usp=drive_link).
+**Step 4**: Replace the content of *xxx/envs/urbanssf/lib/python3.11/site-packages/mamba_ssm/ops/selective_scan_interface.py* with [selective_scan_interface.py](https://drive.google.com/file/d/1hHNJjNkV_-Uurqg07qCXaCPNhu-FESzB/view?usp=drive_link).
 
 </details>
 
