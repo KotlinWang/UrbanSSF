@@ -192,12 +192,12 @@ python tools/uavid_patch_split.py \
 "-c" means the path of the config, use different **config** to train different models.
 
 ```shell
-python train_supervision.py -c config/uavid/unetformer.py
+python train_supervision.py -c config/uavid/urbanss-s.py
 ```
 
 If the pre-trained weights download fails, please use: 
 ```shell
-HF_ENDPOINT=https://hf-mirror.com python train_supervision.py -c config/uavid/unetformer.py
+HF_ENDPOINT=https://hf-mirror.com python train_supervision.py -c config/uavid/urbanssf-s.py
 ```
 
 ## :mag: Testing
