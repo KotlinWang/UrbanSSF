@@ -4,6 +4,7 @@ https://github.com/user-attachments/assets/7642ec47-1c8a-472e-a5f9-5d1501794f7a.
 
 ## :newspaper:News
 
+- **[2026/5/15]** :trophy: Our UrbanSSF has been selected as an [ESI highly cited paper](https://webofscience.clarivate.cn/wos/woscc/full-record/WOS:001421143500001).!!!
 - **[2025/1/17]** Our article ([*Accurate Segmentation of Urban Spatial Structure: A Framework for Large-Scale Remote Sensing Images Using Feature State Sequences*](https://www.sciencedirect.com/science/article/abs/pii/S0924271625000176)) was successfully accepted by ISPRS Journal of Photogrammetry and Remote Sensing!!!  :tada: :tada: :tada: 
 - **[2024/8/4]** UrbanSSF Project Creation. :sunglasses:
 
